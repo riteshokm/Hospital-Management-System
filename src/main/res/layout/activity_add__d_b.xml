@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_gradient1"
+    android:padding="50dp"
+    tools:context=".DB.Add_DB">
+
+    <ImageView
+        android:id="@+id/img"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="30dp" />
+
+    <EditText
+        android:id="@+id/et_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/img"
+        android:layout_marginTop="30dp"
+        android:backgroundTint="@color/design_default_color_on_secondary"
+        android:gravity="center"
+        android:hint="Full Name"
+        android:maxLength="30"
+        android:maxLines="1"
+        android:textAlignment="gravity" />
+
+    <RadioGroup
+        android:id="@+id/Gender"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/et_name"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/g_male"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="20dp"
+            android:buttonTint="@color/design_default_color_on_secondary"
+            android:text="Male" />
+
+        <RadioButton
+            android:id="@+id/g_female"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:buttonTint="@color/design_default_color_on_secondary"
+            android:text="Female" />
+    </RadioGroup>
+
+    <EditText
+        android:id="@+id/et_age"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Gender"
+        android:backgroundTint="@color/design_default_color_on_secondary"
+        android:gravity="center"
+        android:hint="Age"
+        android:inputType="number"
+        android:maxLength="3"
+        android:maxLines="1"
+        android:textAlignment="gravity" />
+
+    <EditText
+        android:id="@+id/r_person"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/et_age"
+        android:backgroundTint="@color/design_default_color_on_secondary"
+        android:gravity="center"
+        android:inputType="text"
+        android:maxLength="30"
+        android:maxLines="1"
+        android:textAlignment="gravity" />
+
+    <EditText
+        android:id="@+id/et_contact"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/r_person"
+        android:backgroundTint="@color/design_default_color_on_secondary"
+        android:gravity="center"
+        android:hint="Contact No."
+        android:inputType="number"
+        android:maxLength="10"
+        android:maxLines="1"
+        android:textAlignment="gravity" />
+
+    <EditText
+        android:id="@+id/et_address"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/et_contact"
+        android:backgroundTint="@color/design_default_color_on_secondary"
+        android:gravity="center"
+        android:hint="Address"
+        android:maxLength="50"
+        android:maxLines="1"
+        android:textAlignment="gravity" />
+
+    <EditText
+        android:id="@+id/et_money"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/et_address"
+        android:backgroundTint="@color/design_default_color_on_secondary"
+        android:gravity="center"
+        android:maxLength="7"
+        android:maxLines="1"
+        android:textAlignment="gravity" />
+
+    <Button
+        android:id="@+id/add_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/et_money"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="20dp"
+        android:layout_marginTop="20dp"
+        android:onClick="Add"
+        android:text="Add Record" />
+
+
+</RelativeLayout>

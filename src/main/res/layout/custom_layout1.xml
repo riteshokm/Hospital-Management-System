@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp"
+    android:background="#ffffff"
+    >
+
+    <ImageView
+        android:id="@+id/img"
+        android:layout_width="100dp"
+        android:layout_height="100dp" />
+
+    <TextView
+        android:id="@+id/tvId"
+        android:layout_width="21dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@+id/img"
+        android:text="ID: "
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tv_id"
+        android:layout_width="25dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="2dp"
+        android:layout_toRightOf="@+id/tvId"
+        android:text="100" />
+
+    <TextView
+        android:id="@+id/tvName"
+        android:layout_width="45dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="25dp"
+        android:layout_toRightOf="@+id/tv_id"
+        android:text="Name: "
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tv_name"
+        android:layout_width="160dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="2dp"
+        android:layout_toRightOf="@+id/tvName"
+        android:maxLength="20"
+        android:text="Ritesh Kumar Mandal" />
+
+    <TextView
+        android:id="@+id/tvGender"
+        android:layout_width="32dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvId"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="3dp"
+        android:layout_toRightOf="@+id/img"
+        android:text="Sex: "
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tv_gender"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_id"
+        android:layout_marginTop="3dp"
+        android:layout_toRightOf="@+id/tvGender"
+        android:text="Female" />
+
+    <TextView
+        android:id="@+id/tvAge"
+        android:layout_width="34dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvName"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="3dp"
+        android:layout_toRightOf="@+id/tv_gender"
+        android:text="Age: "
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tv_age"
+        android:layout_width="30dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_name"
+        android:layout_marginTop="3dp"
+        android:layout_toRightOf="@+id/tvAge"
+        android:text="100" />
+
+    <TextView
+        android:id="@+id/tvR_person"
+        android:layout_width="123dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvGender"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="3dp"
+        android:layout_toRightOf="@+id/img"
+        android:text="Appointed Patient: "
+        android:textStyle="bold"
+        android:visibility="visible" />
+
+    <TextView
+        android:id="@+id/tvr_person"
+        android:layout_width="160dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvAge"
+        android:layout_marginTop="3dp"
+        android:layout_toRightOf="@+id/tvR_person"
+        android:maxLength="20"
+        android:text="Dr. Ramesh K. Mishra"
+        android:visibility="visible" />
+
+    <TextView
+        android:id="@+id/tvMoney"
+        android:layout_width="73dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvR_person"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="3dp"
+        android:layout_toRightOf="@+id/img"
+        android:text="Bill Status: "
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tv_money"
+        android:layout_width="56dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvr_person"
+        android:layout_marginTop="3dp"
+        android:layout_toRightOf="@+id/tvMoney"
+        android:text="1000000" />
+
+    <TextView
+        android:id="@+id/tvContact"
+        android:layout_width="56dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvr_person"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="3dp"
+        android:layout_toRightOf="@+id/tv_money"
+        android:text="Contact:"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tv_contact"
+        android:layout_width="90dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvr_person"
+        android:layout_marginTop="3dp"
+        android:layout_toRightOf="@+id/tvContact"
+        android:text="7347361721" />
+
+    <TextView
+        android:id="@+id/tvAddress"
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvMoney"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="3dp"
+        android:layout_toRightOf="@+id/img"
+        android:text="Address: "
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tv_address"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_money"
+        android:layout_marginTop="3dp"
+        android:layout_toRightOf="@+id/tvAddress"
+        android:maxLength="50"
+        android:maxLines="2"
+        android:text="5/142, KCC Nagar, Ajmer Road, Jaipur" />
+
+
+</RelativeLayout>
